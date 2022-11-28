@@ -1,0 +1,81 @@
+.all-charts__container {
+    display: flex;
+    flex-direction: column;
+    margin: 4em auto 0;
+    width: auto;
+    box-sizing: border-box;
+    padding: 0 10%;
+}
+
+.all-charts__header {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    max-height: 2.5em;
+}
+
+.all-charts__title {
+    font-family: 'Circe Rounded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.all-charts__btn {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.all__charts_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+}
+
+.all-charts__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.chart_container {
+    display: block;
+    width: 432px;
+    height: 240px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+.chart_warning {
+    display: flex;
+    width: 432px;
+    height: 40px;
+    background: #FFF7D9;
+    align-items: center;
+    border-radius: 10px;
+    gap: 1em;
+    box-sizing: border-box;
+    padding: 0 1em;
+    margin-top: .5em;
+}
+
+.chart_warning_icon {
+    // background-image: url(../Image/icon_recommendations.png);
+    width: 24px;
+    height: 24px;
+}
+
+.chart_warning_link {
+    display: inline-block;
+    margin-left: 10px;
+    color: #457BE5;
+}

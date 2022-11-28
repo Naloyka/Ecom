@@ -1,0 +1,85 @@
+// контейнер sidebar
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 264px;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+
+    &_active {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        background-color: white;
+        height: 100%;
+        border-right: 1px solidrgba(0, 0, 0, 0.25);
+        max-width: 50px;
+        transition: all 0.3s;
+    }
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 264px;
+        min-height: 1440px;
+    }
+}
+
+// Лого бокс
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    height: 60px;
+
+    & .logo {
+        display: inline-block;
+        font-family: 'Inter';
+        font-size: 16px;
+        width: auto;
+    }
+}
+
+// Кнопка бургер
+.burger__btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-image: url('./img/burger.svg');
+    background-color: #fff;
+    background-size: 18px;
+    transition: all 0s;
+
+    &:hover {
+        background-color: #fff;
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    &_active {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        background-image: url('./img/burger.svg');
+        background-size: 18px;
+        background-color: white;
+        transform: rotate(180deg);
+        transition: all 0s;
+    }
+}

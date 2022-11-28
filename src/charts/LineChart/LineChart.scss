@@ -1,0 +1,50 @@
+.line_chart {
+    background: white;
+    border: 1px solid grey;
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 2em 0.2em 0.5em;
+}
+
+.line_chart_big{
+    width: 100%;
+    max-height: 50vh;
+    padding: 2em .5em 1.5em;
+}
+
+.line_chart_header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -1em;
+    box-sizing: border-box;
+    padding: 0 0.5em;
+}
+
+.header_icon_placeholder{
+    display: flex;
+    gap: .3em;
+}
+
+.header_icon_placeholder img{
+    width: .9em;
+    height: .9em;
+    cursor: pointer;
+}
+
+.line_chart_heading_big{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line_chart_heading{
+    display: flex;
+    align-items: center;
+}
+
+.chart_title_icon{
+    width: .85em;
+    height: .85em;
+    margin-left: 1em;
+}

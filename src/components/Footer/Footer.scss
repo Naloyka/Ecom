@@ -1,0 +1,144 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #FBFBFB;
+    padding: 1em 3em;
+
+    // Заголовок
+
+    &__content {
+        max-width: 1216px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        max-width: 160px;
+    }
+
+    // вверхняя часть одвала
+    &__upper-box {
+        display: flex;
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        gap: 2.5em;
+        height: 100%;
+        justify-content: center;
+        border-bottom: 1px solid #DEDEDE;
+        border-top: 1px solid #DEDEDE;
+    }
+
+    // нижняя часть подвала
+    &__bottom-box {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1.25em;
+        padding-bottom: 1.25em;
+    }
+
+    &__link {
+        display: inline-block;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75em;
+        line-height: 15px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 0.4em;
+        column-gap: 2.3em;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        column-gap: 3.33em;
+        row-gap: 1.9em;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        display: block;
+        max-width: 160px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__copyright {
+        color: grey;
+        display: inline-block;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75em;
+        line-height: 15px;
+        padding-right: 1em;
+       
+    }
+}
+
+.country-box {
+    width: 200px;
+}
+
+.icon_square {
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 1300px) {
+    .country {
+        margin-right: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer__nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        .copyright {
+            justify-content: center;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+
+        & .footer__link {
+            border: none;
+        }
+
+        .footer__copyright {
+            border: none;
+        }
+    }
+}

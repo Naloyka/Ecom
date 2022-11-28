@@ -1,0 +1,136 @@
+.footer {
+   
+    // Заголовок
+    &__title {
+        margin-bottom: 1em;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+
+
+    // нижняя часть подвала
+
+    &__item {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    &__copyright {
+        color: grey;
+        display: inline-block;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75em;
+        line-height: 15px;
+        white-space: nowrap;
+    }
+}
+
+.icon_square {
+    display: block;
+    margin: auto;
+}
+
+.address__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 20px;
+    color: #121212;
+
+    &_tel,
+    &_mail,
+    &_send {
+        &::before {
+            content: "";
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 16px;
+            width: 16px;
+            height: 16px;
+            margin-right: 0.75em;
+            vertical-align: middle;
+        }
+    }
+
+    &_send::before {
+        background-image: url('./img/send-message.png');
+    }
+
+    &_tel::before {
+        background-image: url('./img/tel.svg');
+    }
+
+    &_mail::before {
+        background-image: url('./img/mail.svg')
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    width: 100%;
+    margin-right: auto;
+
+    & .footer__link {
+        border-left: 1px solid #DEDEDE;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+    }
+
+    & .country {
+        justify-self: flex-end;
+        margin-left: auto;
+        border-left: none;
+        padding-right: 0;
+        width: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer__nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .copyright {
+        & .country {
+            justify-self: flex-end;
+            margin-left: 0;
+            border-left: none;
+            padding-right: 2em;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .copyright {
+        flex-direction: column;
+        align-items: center;
+
+        & .footer__link {
+            border: none;
+        }
+
+        .footer__copyright {
+            border: none;
+        }
+
+        & .country {
+            justify-self: flex-end;
+            margin-left:auto;
+            border-left: none;
+            padding-right: 2em;
+        }
+    }
+}

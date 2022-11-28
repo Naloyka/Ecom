@@ -1,0 +1,62 @@
+.filter_selector.display_item{
+    display: flex;
+}
+
+.filter-account__item {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+.select {
+    padding: 0.35em 0.5em;
+    box-sizing: border-box;
+    width: 85%;
+    border: 1px solid grey;
+    border-radius: .25em;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.filter_selector{
+    overflow: overlay;
+    display: none;
+    flex-direction: column;
+    height: auto;
+    max-height: 10em;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: -.05em;
+    background-color: white;
+    border: 1px solid grey;
+    z-index: 5;
+    padding: .5em .75em;
+    border-radius: .5em;
+    row-gap: .5em;
+}
+
+
+.filters_search_wrapper{
+    border: 1px solid gray;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+}
+
+.filters_search{
+    padding: .35em .5em;
+    border: none;
+    height: 100%;
+    outline: none;
+}
+
+.filters_search_icon{
+    width: 1em;
+    height: 1em;
+    margin-right: .25em;
+}

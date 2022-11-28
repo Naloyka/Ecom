@@ -1,0 +1,27 @@
+.date-picker {
+    display: flex;
+    background: white;
+    padding: 0.25em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 0.5em;
+    cursor: pointer;
+}
+
+.date-picker input {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.date-picker input:focus{
+    border: none;
+    outline: none;
+}
+
+.first-date_picker{
+    text-align: end;
+}

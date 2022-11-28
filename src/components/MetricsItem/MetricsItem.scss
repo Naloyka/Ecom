@@ -1,0 +1,87 @@
+.metrics__item {
+    position: relative;
+    max-height: 10vh;
+    min-width: 15%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #C6C6C6;
+    border-radius: .5em;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #fff;
+    cursor: pointer;
+    gap: 1em;
+    position: relative;
+}
+
+.metrics_item_header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metrics_item_graph_color{
+    position: absolute;
+    width: 100%;
+    background-color: grey;
+    height: .5em;
+    top: 0;
+    left: 0;
+    border-radius: .5em .5em 0 0;
+}
+
+.graph_color_0{
+    background-color: #A43FF3;
+}
+
+.graph_color_1{
+    background-color: #FFC000;
+}
+
+.graph_color_2{
+    background-color: #B2F162;
+}
+
+.graph_color_3{
+    background-color: #FF5959;
+}
+
+.graph_color_4{
+    background-color: #3182CC;
+}
+
+.graph_color_5{
+    background-color: #ACD0D2;
+}
+
+.metrics__title{
+    position: relative;
+    top: .2em;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.settings__icons{
+    position: relative;
+    top: -.25em;
+    display: flex;
+    gap: .5em;
+}
+
+.metrics__price-container{
+    position: relative;
+    top: .1em;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metrics__price{
+    font-size: 1.5em;
+    margin: 0;
+}
+
